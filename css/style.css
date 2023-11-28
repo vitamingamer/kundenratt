@@ -1,1 +1,73 @@
-/* Denna fil skall innehålla din CSS kod */
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Helvetica, Arial, sans-serif;
+}
+.wrapperIndex{
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 100px auto 200px 150px;
+    grid-template-areas: 
+    'hd nv nv'
+
+
+    
+    
+    ;
+}
+a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+header {
+    background-color: aqua;
+    grid-area: hd;
+}
+nav {
+    display: grid;
+    background-color: crimson;
+    grid-area: nv;
+    padding: 2px;;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'sr sr bu'
+    'gr gu os'
+    ;
+}
+#search {
+    grid-area: sr;
+}
+#burger {
+    grid-area: bu;
+    rotate: 90deg;
+    width:fit-content;
+}
+#rea {
+    grid-area: gr;
+    background-color: blueviolet;
+}
+#guide{
+    grid-area: gu;
+    background-color: blanchedalmond;
+}
+#oss {
+    grid-area: os;
+    background-color: aquamarine;
+}
+body {
+    background-color: chocolate;
+    grid-area: bo;
+}
+aside {
+    background-color: chartreuse;
+    grid-area: as;
+}
+footer {
+    background-color: cornflowerblue;
+    grid-area:ft;
+}
