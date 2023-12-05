@@ -4,7 +4,7 @@
     box-sizing:border-box;
     font-family:Helvetica, Arial, sans-serif;
 }
-.wrapperIndex{
+.wrapper{
     display: grid;
     padding-left: 10%;
     padding-right: 10%;
@@ -12,32 +12,46 @@
     grid-template-rows: 100px auto 200px 150px;
     grid-template-areas: 
     'hd nv nv'
-
-
-    
-    
+    'ma ma as'
+    'ma ma as'
+    'ft ft ft'
     ;
+}
+.elements {
+    padding:1vw;
 }
 a {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
+main {
+    background-color: rgb(255, 255, 255);
+    grid-area: ma;
+}
 header {
-    background-color: aqua;
+    font-size: xx-large;
+    text-align: center;
+    font-family: Avenir;  
+    color: white; 
+    background-color: #e74c3c;
     grid-area: hd;
 }
 nav {
     display: grid;
-    background-color: crimson;
+    background-color: rgb(255, 255, 255);
     grid-area: nv;
-    padding: 2px;;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    'sr sr bu'
+    'wi wi wi'
     'gr gu os'
     ;
+}
+#winterclass {
+    display:  flex;
+    grid-area: wi;
+    justify-content: space-between;
 }
 #search {
     grid-area: sr;
@@ -46,28 +60,29 @@ nav {
     grid-area: bu;
     rotate: 90deg;
     width:fit-content;
+    align-self: flex-end;
 }
 #rea {
     grid-area: gr;
-    background-color: blueviolet;
+    background-color:   rgb(255, 255, 255);
 }
 #guide{
     grid-area: gu;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
 }
 #oss {
     grid-area: os;
-    background-color: aquamarine;
+    background-color: white;
 }
 body {
-    background-color: chocolate;
+    background-color: rgb(255, 248, 235);
     grid-area: bo;
 }
 aside {
-    background-color: chartreuse;
+    background-color: rgb(255, 255, 255);
     grid-area: as;
 }
 footer {
-    background-color: cornflowerblue;
+    background-color: rgb(255, 255, 255);
     grid-area:ft;
 }
