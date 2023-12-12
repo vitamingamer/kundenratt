@@ -12,30 +12,44 @@
     grid-template-rows: 100px auto 200px 150px;
     grid-template-areas: 
     'hd nv nv'
+    'hu hu hu'
     'ma ma as'
     'ma ma as'
-    'ft ft ft'
     ;
 }
 .elements {
     padding:1vw;
 }
-a {
-    color: black;
+nav a {
+    color:black;
     background-color: transparent;
     text-decoration: none;
 }
 main {
+    display: grid;
     background-color: rgb(255, 255, 255);
     grid-area: ma;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 20vw auto 10vw;
+    grid-template-areas: 
+    'ti ti ti'
+    ;
+}
+.huvbild {
+    grid-area: hu;
 }
 header {
     font-size: xx-large;
     text-align: center;
-    font-family: Avenir;  
+    font-family: Avenir, Helvetica, Arial;  
     color: white; 
     background-color: #e74c3c;
     grid-area: hd;
+}
+header a {
+    font-family: Avenir, Helvetica, Arial;  
+    color: white;
+    text-decoration: none;
 }
 nav {
     display: grid;
@@ -63,12 +77,21 @@ nav {
     align-self: flex-end;
 }
 #rea {
+    display: block;
     grid-area: gr;
-    background-color:   rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
+}
+#rea:hover {
+    color:white;
+    background-color: #e74c3c;
 }
 #guide{
     grid-area: gu;
     background-color: rgb(255, 255, 255);
+}
+#guide:hover {
+    color:white;
+    background-color:#e74c3c;
 }
 #oss {
     grid-area: os;
@@ -78,11 +101,18 @@ body {
     background-color: rgb(255, 248, 235);
     grid-area: bo;
 }
+.title {
+    font-family: Avenir, Helvetica, Arial;
+    font-size: x-large;
+    font-weight:600;
+    grid-area: ti;
+}
 aside {
     background-color: rgb(255, 255, 255);
     grid-area: as;
 }
 footer {
-    background-color: rgb(255, 255, 255);
-    grid-area:ft;
+    background-color: rgb(118, 59, 59);
+    grid-area: ft;
+    height: 19vw;
 }
