@@ -35,8 +35,15 @@ main {
     'ti ti ti'
     ;
 }
-.huvbild {
+.container {
     grid-area: hu;
+}
+#texten {
+    background-color: white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
 }
 header {
     font-size: xx-large;
@@ -70,16 +77,11 @@ nav {
 #search {
     grid-area: sr;
 }
-#burger {
-    grid-area: bu;
-    rotate: 90deg;
-    width:fit-content;
-    align-self: flex-end;
-}
 #rea {
     display: block;
     grid-area: gr;
     background-color:rgb(255, 255, 255);
+    transition:0.2s;
 }
 #rea:hover {
     color:white;
@@ -88,6 +90,7 @@ nav {
 #guide{
     grid-area: gu;
     background-color: rgb(255, 255, 255);
+    transition:0.2s;
 }
 #guide:hover {
     color:white;
@@ -96,6 +99,11 @@ nav {
 #oss {
     grid-area: os;
     background-color: white;
+    transition:0.2s;
+}
+#oss:hover {
+    color:white;
+    background-color:#e74c3c;
 }
 body {
     background-color: rgb(255, 248, 235);
