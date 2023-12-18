@@ -114,9 +114,13 @@ body {
     font-size: x-large;
     font-weight:600;
     grid-area: ti;
+    background-color: #e74c3c;
+}
+#intro {
+    background-color: #e74c3c;
 }
 aside {
-    background-color: rgb(255, 255, 255);
+    background-color:#e74c3c;
     grid-area: as;
 }
 footer {
