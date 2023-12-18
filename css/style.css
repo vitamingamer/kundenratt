@@ -1,12 +1,13 @@
 
 
 body {
+    background-color: rgb(230, 230, 230);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 15% auto 20%;
+    grid-template-rows: 10vw auto 10vw;
     grid-template-areas: 
     'na na na'
     'ma ma as'
@@ -16,24 +17,23 @@ body {
 nav {
     display: grid;
     grid-area: na;
-    border-bottom:#e74c3c 1vw;
-    background-color: gray;
+    background-color:#e74c3c;
     text-align: center;
     align-content: center;
     justify-content: start;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    'hd re st om'
+    'hd re om'
     ;
 }
 nav a {
-    color:#e74c3c;
+    color:#ffffff;
     text-decoration: none;
 }
 header {
     font-family: Helvetica, Arial,  sans-serif;
     font-size: xx-large;
-    color: #e74c3c;  
+    color: #ffffff;  
     grid-area: hd;
     padding-left:2vw;
 }
@@ -42,32 +42,43 @@ header {
     grid-area: re;
     align-self: center;
     padding-left:2vw;
+    font-size: larger;
 }
 #Stilguider{
     font-family: Helvetica, Arial,  sans-serif;
     grid-area: st;
     align-self: center;
     padding-left:2vw;
+    font-size: larger;
 }
 #Omoss {
     font-family: Helvetica, Arial,  sans-serif;
     grid-area: om;
     align-self: center;
     padding-left:2vw;
+    font-size: larger;
 }
 #titel {
     font-family: Helvetica, Arial,  sans-serif;
     font-size:larger;
     font-weight: bold;
+    grid-area: ti;
+    justify-self: center;
+}
+#content {
+    grid-area: co;
 }
 main {
     grid-area: ma;
 }
 #indexmain {
     display:grid;
+    justify-content: space-evenly;
+    gap:2vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 10vw 1fr 1fr;
     grid-template-areas:
+    'ti co'
     'img1 img2'
     'img3 img4'
     
@@ -76,6 +87,7 @@ main {
     ;
 }
 aside {
+    margin-top:20vw;
     grid-area: as;
 }
 footer {
@@ -92,4 +104,60 @@ footer {
 }
 #img4 {
     grid-area: img4;
+}
+#reamain {
+    display: grid;
+    justify-content: space-evenly;
+    gap:2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vw 1fr;
+    grid-template-areas:
+    'ti co'
+    'ca ca'
+}
+#cardboard {
+    grid-area:ca;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2vw;
+    margin:auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+section img {
+    width:25vw;
+}
+#thiscase {
+    padding-left: 2vw;
+}
+#aboutmain {
+    display: grid;
+    justify-content: space-evenly;
+    gap:2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vw 1fr;
+    grid-template-areas:
+    'ti co'
+    'p1 p2'
+}
+#p1 {
+    grid-area: p1;
+}
+#p2{
+    grid-area: p2;
+}
+aside {
+    padding-left:2vw;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    background-color: #e74c3c;
+    margin: auto;
+    padding: 1vw;
+}
+#bag {
+    width: 10vw;
 }
